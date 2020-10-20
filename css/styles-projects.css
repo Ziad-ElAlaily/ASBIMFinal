@@ -1,0 +1,265 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+#title {
+  background-color: #eae5e1 !important;
+}
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 1%;
+  margin-left: 15%;
+  /* background-color: blue; */
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #f1f1f1;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+  background-color: #eae5e1;
+  display: none;
+  padding: 3% 15% 7%;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.tabcontents h3 {
+  padding-top: 10%;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#project-wrapper {
+  position: relative;
+  overflow: hidden;
+  /* background: #eae5e1; */
+
+  margin: 0 auto;
+  /* padding: .3rem 1rem; */
+}
+
+.carousel-item.proj {
+  height: 100% !important;
+  max-height: 51vh;
+}
+
+body .container {
+  background: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#content-wrapper {
+  width: 100%;
+  height: 82vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0.3rem 3.8rem;
+}
+
+#box-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#carousellABM {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#carousellABM img {
+  max-width: 100%;
+  height: auto;
+}
+
+#foreground {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin: 0 auto;
+  background: #0164ab;
+  z-index: 2;
+}
+
+.paph-wrapper,
+.paph-wrapper1,
+.paph-wrapper2 {
+  position: absolute;
+  max-width: 380px;
+  max-height: 260px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.paph-wrapper1 .small-path {
+  top: 245px;
+  left: 30px;
+}
+
+.paph-wrapper2 .small-path {
+  top: 230px;
+  left: 210px;
+}
+
+#text {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0px 50px;
+  color: #fff;
+  opacity: 1;
+}
+
+#text h2 {
+  color: #e88956;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  margin: 1rem 0;
+}
+
+#text p {
+  color: #e88956;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  margin: 1rem 0;
+}
+
+#text .icon-line {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: red;
+}
+
+.small-path {
+  top: 10px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #0072bb;
+  opacity: 1;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.path {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 260px;
+  height: 260px;
+  background: #0072bb;
+  opacity: 0.2;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.carousel-indicators li.active {
+  background-color: #0070c0;
+}
+
+#carousellABM img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 81vh;
+  float: left;
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  opacity: 0.5;
+  background: black;
+}
